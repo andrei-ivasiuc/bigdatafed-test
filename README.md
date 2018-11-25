@@ -15,6 +15,11 @@ Prerequisites
 * Python > 3.5
 * virtualenv
 
+```
+virtualenv -p python3 venv
+source venv/bin/activate
+```
+
 Installation
 ============
 
