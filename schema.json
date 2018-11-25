@@ -1,0 +1,77 @@
+{
+    "gold": {
+        "url": "https://www.investing.com/commodities/gold-historical-data",
+        "index_field": "date",
+        "row_xpath": "//*[@id=\"curr_table\"]/tbody/tr",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+        },
+        "fields": [
+            {
+                "name": "date",
+                "type": "DateField",
+                "params": {
+                    "selector": "./td[1]/text()",
+                    "date_format": "%b %d, %Y"
+                }
+            },
+            {
+                "name": "price",
+                "type": "FloatField",
+                "params": {
+                    "selector": "./td[2]/text()"
+                }
+            }
+        ]
+    },
+    "silver": {
+        "url": "https://www.investing.com/commodities/silver-historical-data",
+        "index_field": "date",
+        "row_xpath": "//*[@id=\"curr_table\"]/tbody/tr",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+        },
+        "fields": [
+            {
+                "name": "date",
+                "type": "DateField",
+                "params": {
+                    "selector": "./td[1]/text()",
+                    "date_format": "%b %d, %Y"
+                }
+            },
+            {
+                "name": "price",
+                "type": "FloatField",
+                "params": {
+                    "selector": "./td[2]/text()"
+                }
+            }
+        ]
+    },
+    "copper": {
+        "url": "https://www.investing.com/commodities/copper-historical-data",
+        "index_field": "date",
+        "row_xpath": "//*[@id=\"curr_table\"]/tbody/tr",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+        },
+        "fields": [
+            {
+                "name": "date",
+                "type": "DateField",
+                "params": {
+                    "selector": "./td[1]/text()",
+                    "date_format": "%b %d, %Y"
+                }
+            },
+            {
+                "name": "price",
+                "type": "FloatField",
+                "params": {
+                    "selector": "./td[2]/text()"
+                }
+            }
+        ]
+    }
+}
