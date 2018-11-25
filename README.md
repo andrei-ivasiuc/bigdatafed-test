@@ -10,6 +10,11 @@ Structure
 /requirements.txt - python package requirements
 ```
 
+Prerequisites
+=============
+* Python > 3.5
+* virtualenv
+
 Installation
 ============
 
@@ -18,11 +23,11 @@ Installation
 How to use
 ==========
 
-####Running parser
+Running parser
 
 `python parser.py`
 
-####Getting commodity info
+Getting commodity info
 
 `python view.py (commodity) --date-from=(date) --date-to=(date)`
 
